@@ -23,9 +23,10 @@ Please read the official documentation before deploying the rules to the product
 ### Generate iptables script to include the DNS filter.
 
 `./iptables_bpf dns -- -i *.*.example.com`
+<p>
 Generated file 'bpf_dns_ip4_any_any_example_com.sh'
 
 ### Apply the rule to the DNS server.
 
 Please review the ./bpf_dns_ip4_any_any_example_com.sh the script. Default it is using the default route interface.
-`./bpf_dns_ip4_any_any_example_com.sh <my DNS IP>
+`./bpf_dns_ip4_any_any_example_com.sh <my DNS IP>`
